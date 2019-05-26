@@ -6,7 +6,7 @@
 /*   By: lusanche <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 17:27:25 by lusanche          #+#    #+#             */
-/*   Updated: 2019/05/23 22:44:27 by lusanche         ###   ########.fr       */
+/*   Updated: 2019/05/25 21:46:05 by lusanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	int		i;
 	char	*substr;
 
-	substr = ft_strnew(len);
+	if (!(substr = ft_strnew(len)))
+		return (NULL);
 	i = 0;
 	while (len--)
 	{
