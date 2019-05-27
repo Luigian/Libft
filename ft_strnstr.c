@@ -6,7 +6,7 @@
 /*   By: lusanche <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/17 20:25:10 by lusanche          #+#    #+#             */
-/*   Updated: 2019/05/24 11:26:24 by lusanche         ###   ########.fr       */
+/*   Updated: 2019/05/26 18:09:17 by lusanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,29 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	char	*needle_first_element;
+	size_t		i;
+	size_t		j;
+	size_t		h;
 
 	if (!*needle)
 		return ((char *)haystack);
-	needle_first_element = (char *)needle;
-	while (*haystack && len)
+	i = 0;
+	j = 0;
+	h = 0;
+	while (haystack[i] && len > i)
 	{
-		while (*haystack && *haystack != *needle && len)
+		while (haystack[i] && haystack[i] != needle[j] && len > i)
+			++i;
+		while (needle[j] && (haystack[i] == needle[j] && len > i))
 		{
-			++haystack;
-			--len;
+			++i;
+			++j;
 		}
-		while (*haystack && *needle && (*haystack == *needle && len))
-		{
-			++haystack;
-			++needle;
-			--len;
-		}
-		if (!*needle)
-			return ((char *)haystack - ft_strlen(needle_first_element));
-		needle = needle_first_element;
+		if (!needle[j])
+			return ((char *)&haystack[i - j]);
+		j = 0;
+		++h;
+		i = h;
 	}
 	return (NULL);
 }
