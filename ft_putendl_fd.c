@@ -6,7 +6,7 @@
 /*   By: lusanche <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/19 19:25:33 by lusanche          #+#    #+#             */
-/*   Updated: 2019/05/19 19:54:24 by lusanche         ###   ########.fr       */
+/*   Updated: 2019/05/26 20:32:09 by lusanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,15 @@
 
 void	ft_putendl_fd(char const *s, int fd)
 {
-	while (*s)
+	if (!s)
+		;
+	else
 	{
-		ft_putchar_fd(*s, fd);
-		++s;
+		while (*s)
+		{
+			ft_putchar_fd(*s, fd);
+			++s;
+		}
+		ft_putchar_fd('\n', fd);
 	}
-	ft_putchar_fd('\n', fd);
 }

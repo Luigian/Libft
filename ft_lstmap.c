@@ -6,7 +6,7 @@
 /*   By: lusanche <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 21:26:04 by lusanche          #+#    #+#             */
-/*   Updated: 2019/05/23 21:25:12 by lusanche         ###   ########.fr       */
+/*   Updated: 2019/05/26 20:36:05 by lusanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@ t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 	t_list *temp;
 
 	trav = lst;
-	temp = ft_lstnew(NULL, 0);
+	if (!lst || !(temp = ft_lstnew(NULL, 0)))
+		return (NULL);
 	temp = f(trav);
 	fresh = temp;
 	while (trav->next)

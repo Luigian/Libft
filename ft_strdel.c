@@ -6,7 +6,7 @@
 /*   By: lusanche <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/18 18:04:02 by lusanche          #+#    #+#             */
-/*   Updated: 2019/05/20 15:09:02 by lusanche         ###   ########.fr       */
+/*   Updated: 2019/05/26 19:54:54 by lusanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,11 @@
 
 void	ft_strdel(char **as)
 {
-	free(*as);
-	*as = NULL;
+	if (!as)
+		;
+	else
+	{
+		free(*as);
+		*as = NULL;
+	}
 }

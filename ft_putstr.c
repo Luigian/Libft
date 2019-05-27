@@ -6,7 +6,7 @@
 /*   By: lusanche <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 23:24:55 by lusanche          #+#    #+#             */
-/*   Updated: 2019/05/15 18:46:01 by lusanche         ###   ########.fr       */
+/*   Updated: 2019/05/26 20:28:50 by lusanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,12 @@
 
 void	ft_putstr(char const *s)
 {
-	while (*s)
-	{
-		ft_putchar(*s);
-		++s;
-	}
+	if (!s)
+		;
+	else
+		while (*s)
+		{
+			ft_putchar(*s);
+			++s;
+		}
 }

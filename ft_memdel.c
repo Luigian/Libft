@@ -6,7 +6,7 @@
 /*   By: lusanche <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 10:21:45 by lusanche          #+#    #+#             */
-/*   Updated: 2019/05/20 11:00:54 by lusanche         ###   ########.fr       */
+/*   Updated: 2019/05/26 19:25:27 by lusanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,11 @@
 
 void	ft_memdel(void **ap)
 {
-	free(*ap);
-	*ap = NULL;
+	if (!ap)
+		;
+	else
+	{
+		free(*ap);
+		*ap = NULL;
+	}
 }

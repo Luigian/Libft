@@ -6,7 +6,7 @@
 /*   By: lusanche <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/19 21:11:06 by lusanche          #+#    #+#             */
-/*   Updated: 2019/05/23 21:17:26 by lusanche         ###   ########.fr       */
+/*   Updated: 2019/05/26 20:23:37 by lusanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ char	*ft_itoa(int n)
 
 	i = 1;
 	len = ft_nbrlen(n);
-	str = ft_strnew(len);
+	if (!(str = ft_strnew(len)))
+		return (NULL);
 	if (n == -2147483648)
 		return (ft_strcpy(str, "-2147483648"));
 	if (n < 0)

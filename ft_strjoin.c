@@ -6,7 +6,7 @@
 /*   By: lusanche <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 17:45:16 by lusanche          #+#    #+#             */
-/*   Updated: 2019/05/24 13:22:24 by lusanche         ###   ########.fr       */
+/*   Updated: 2019/05/26 20:20:01 by lusanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,12 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		j;
 	char	*strcon;
 
+	if (!s1 || !s2)
+		return (NULL);
 	i = 0;
 	j = 0;
-	strcon = ft_strnew(ft_strlen(s1) + ft_strlen(s2));
+	if (!(strcon = ft_strnew(ft_strlen(s1) + ft_strlen(s2))))
+		return (NULL);
 	while (s1[i])
 	{
 		strcon[i] = s1[i];
@@ -32,6 +35,5 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		++i;
 		++j;
 	}
-	strcon[i] = '\0';
 	return (strcon);
 }
