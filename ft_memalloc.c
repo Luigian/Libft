@@ -6,7 +6,7 @@
 /*   By: lusanche <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 09:33:06 by lusanche          #+#    #+#             */
-/*   Updated: 2019/05/26 22:21:08 by lusanche         ###   ########.fr       */
+/*   Updated: 2019/05/26 22:25:02 by lusanche         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ void	*ft_memalloc(size_t size)
 {
 	char	*fresh;
 
+	fresh = NULL;
 	if (!size)
 		;
 	else
@@ -24,6 +25,6 @@ void	*ft_memalloc(size_t size)
 			return (NULL);
 		while (size)
 			fresh[--size] = 0;
-		return ((void *)fresh);
 	}
+	return ((void *)fresh);
 }
