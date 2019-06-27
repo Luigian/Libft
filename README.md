@@ -14,15 +14,15 @@ In this project i recoded a number of standard C library functions, as well as o
 
 ### Objectives:
 
-* Basics of C 
-* Libc 
-* Generation of a static library 
+* Basics of C.
+* Libc.
+* Generation of a static library.
 
 ### Skills:
 
-* Imperative programming 
-* Rigor 
-* Algorithms & AI 
+* Imperative programming.
+* Rigor.
+* Algorithms & AI.
 
 ### Compilation:
 
