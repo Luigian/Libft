@@ -31,8 +31,4 @@
 
 ### Execution:
 
-`gcc "file_main" libft.a`
-| Compile a main with the library.
-
-`./a.out`
-| Run the program.
+`gcc "file_main" libft.a && ./a.out`| Compile a main with the library and run the program.
