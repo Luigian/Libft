@@ -10,7 +10,7 @@
 
 * Integration of header, main and function files.
 
-* Compiling using Makefile.
+* Compiling using a Makefile.
 
 * Strings and memory manipulation.
 
