@@ -27,7 +27,9 @@ In this project i recoded a number of standard C library functions, as well as o
 ### Compilation:
 
 `make all` | First time compilation.
+
 `make fclean` | Delete files generated from compilation.
+
 `make re` | Delete files generated from compilation and recompile.
 
 ### Execution:
