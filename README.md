@@ -2,11 +2,11 @@
 
 # Libft
 
-`libft.a` is a library of useful functions that could be reused in most of the C projects during the 42 School Program.
+In this project i recoded a number of standard C library functions, as well as other utility functions that i will reuse throughout mi curriculum on 42 School.
 
 ### Key points:
 
-* Understanding many standard libc functions.
+* Deep understanding of many standard C library functions.
 
 * Integration of header, main and function files.
 
