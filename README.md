@@ -7,13 +7,9 @@ In this project i recoded a number of standard C library functions, as well as o
 ### Key points:
 
 * Deep understanding of many standard C library functions.
-
 * Integration of header, main and function files.
-
 * Compiling using a Makefile.
-
 * Strings and memory manipulation.
-
 * Linked lists manage.
 
 ### Objectives:
@@ -30,11 +26,9 @@ In this project i recoded a number of standard C library functions, as well as o
 
 ### Compilation:
 
-`make all`| First time compilation.
-
-`make fclean`| Delete files generated from compilation.
-
-`make re`| Delete files generated from compilation and recompile.
+`make all` | First time compilation.
+`make fclean` | Delete files generated from compilation.
+`make re` | Delete files generated from compilation and recompile.
 
 ### Execution:
 
