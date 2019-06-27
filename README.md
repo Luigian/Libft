@@ -1,20 +1,20 @@
 ![](resources/images/libft_banner.png)
 
-# Get Next Line
+# Libft
 
-`get_next_line` is a function that returns a line read from a file descriptor. Calling it in a loop will read one line at a time until the end of the text.
+`libft.a` is a library of useful functions that could be reused in most of the C projects during the 42 School Program.
 
 ### Key points:
 
-* Function read and buf size adaptation.
+* Understanding many standard libc functions.
 
-* Utilization of temporal variables.
+* Integration of header, main and function files.
 
-* Static variables.
+* Compiling using Makefile.
 
-* Proper allocation and memory free.
+* Strings and memory manipulation.
 
-* Managing multiple file descriptors.
+* Linked lists manage.
 
 
 ### Compilation:
@@ -31,21 +31,8 @@
 
 ### Execution:
 
-`./test_gnl"`
-| Read from Standard Input.
+`gcc "file_main" libft.a`
+| Compile a main with the library.
 
-`./test_gnl "file_path"`
-| Read from a single file.
-
-`./test_gnl "file_path_1" "file_path_2" "file_path_3"`
-| Read from multiple files.
-
-`./test_gnl "file_path_1" "file_path_2" "file_path_3" mix n`
-| Read n lines from multiple files.
-
-### Returning values:
-`1` | Line read.
-
-`0` | No read, end of file.
-
-`-1` | Error.
+`./a.out`
+| Run the program.
