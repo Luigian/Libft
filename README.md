@@ -19,9 +19,7 @@ In this project i recoded a number of standard C library functions, as well as o
 ### Objectives:
 
 * Basics of C 
-
 * Libc 
-
 * Generation of a static library 
 
 ### Skills:
@@ -30,18 +28,13 @@ In this project i recoded a number of standard C library functions, as well as o
 * Rigor 
 * Algorithms & AI 
 
-
 ### Compilation:
 
-`make all`
-| First time compilation.
+`make all`| First time compilation.
 
-`make fclean`
-| Delete files generated from compilation.
+`make fclean`| Delete files generated from compilation.
 
-`make re`
-| Delete files generated from compilation and recompile.
-
+`make re`| Delete files generated from compilation and recompile.
 
 ### Execution:
 
