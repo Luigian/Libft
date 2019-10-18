@@ -24,7 +24,7 @@ In this project i recoded a number of standard C library functions, as well as o
 * Rigor.
 * Algorithms & AI.
 
-### Compilation:
+### Compilation ('libft projects files' directory):
 
 `make all` | First time compilation.
 
