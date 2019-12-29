@@ -34,4 +34,4 @@ In this project i recoded a number of standard C library functions, as well as o
 
 ### Execution:
 
-`gcc [main]libft.a && ./a.out` | Compile a main with the library, and then execute the program.
+`gcc [main] libft.a && ./a.out` | Compile a main with the library, and then execute the program.
