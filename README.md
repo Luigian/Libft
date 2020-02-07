@@ -36,7 +36,7 @@ In this project i recoded a number of standard C library functions, as well as o
 
 `gcc [main] libft.a && ./a.out` | Compile a main with the library, and then execute the program.
 
-## Author:
+### Credits:
 
 [*Luis Sanchez*](https://www.linkedin.com/in/luis-sanchez-13bb3b189/)
 2019. Freemont, CA
